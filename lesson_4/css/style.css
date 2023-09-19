@@ -1,0 +1,66 @@
+@import url('reset.css');
+
+body {
+	background-color: slategrey;
+}
+
+[class*="__container"]{
+	color: white;
+}
+
+div {
+	color: black;
+}
+
+h2 {
+	color: blue;
+}
+
+.block-main {
+	color: blueviolet;
+}
+
+p span {
+	color: darkred;
+}
+
+#header-btn {
+	color: chartreuse;
+}
+
+div .product-text {
+	color: hotpink;
+}
+
+.product-text a {
+	color: darkmagenta;
+}
+
+.menu-item a {
+	color: darkgreen;
+}
+
+.title.text {
+	color: blueviolet;
+}
+
+.text ~ p {
+	color: bisque;
+}
+
+.text + p {
+	color: aquamarine;
+}
+
+p.text {
+	color: coral;
+}
+
+.info-list {
+	color: goldenrod;
+}
+
+.info-list .item {
+	color: darkolivegreen;
+}
+
