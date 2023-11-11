@@ -1,0 +1,141 @@
+@import url('reset.css');
+
+body {
+    background: url('../img/bg-fern.jpg') 00 /cover;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+[class*=__container] {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: o 15px;
+}
+
+.page__container {
+    position: relative;
+    transition: all 5s ease 0s;
+}
+
+.fern-flower {
+    position: absolute;
+    perspective: 10px;
+    perspective-origin:center;
+    transform: rotate(360deg);
+    transition: all 5s ease 0s;
+}
+
+.page__container:hover .fern-flower {
+    transform: rotateX(45deg);
+	transition: 3s ease 0s;
+    transition-property: 6s;
+} 
+
+.fern-flower__center {
+    position: absolute;
+    top: 500px;
+    left: 552px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(247, 238, 214);
+    box-shadow: inset 10px 10px 20px rgb(140, 214, 249), 10px 10px 20px rgb(140, 214, 249);
+}
+
+.fern-flower:hover .fern-flower__center {
+    transition: 3s ease 0s;
+    box-shadow: inset 10px 10px 20px rgb(140, 214, 249), 10px 500px 50px rgb(140, 214, 249);
+}
+
+.fern-flower__01 {
+    position: absolute;
+    top: 585px;
+    left: 555px;
+    width: 105px;
+    height: 225px;
+    border-radius:50% 50% 46% 54% / 49% 47% 53% 51% ;
+    background-color: aliceblue;
+    box-shadow: inset 10px 10px 20px rgb(140, 214, 249), 10px 10px 20px rgb(140, 214, 249);
+}
+
+.fern-flower__02 {
+    position: absolute;
+    top: 290px;
+    left: 545px;
+    width: 105px;
+    height: 225px;
+    border-radius: 50% 50% 46% 54% / 49% 47% 53% 51% ;
+    background-color: aliceblue;
+    box-shadow: inset 10px 10px 20px rgb(140, 214, 249), 10px 10px 20px rgb(140, 214, 249);
+}
+
+.fern-flower__03 {
+    position: absolute;
+    top: 340px;
+    left: 620px;
+    width: 195px;
+    height: 195px;
+    border-radius: 86% 14% 91% 9% / 90% 15% 85% 10% ;
+    background-color: aliceblue;
+    box-shadow: inset 10px 10px 20px rgb(140, 214, 249), 10px 10px 20px rgb(140, 214, 249);
+}
+
+.fern-flower__04 {
+    position: absolute;
+    top: 567px;
+    left: 415px;
+    width: 170px;
+    height: 183px;
+    border-radius: 86% 14% 91% 9% / 90% 15% 85% 10% ;
+    background-color: aliceblue;
+    box-shadow: inset 10px 10px 20px rgb(140, 214, 249), 10px 10px 20px rgb(140, 214, 249);
+}
+
+.fern-flower__05 {
+    position: absolute;
+    top: 335px;
+    left: 380px;
+    width: 195px;
+    height: 195px;
+    border-radius: 11% 89% 8% 92% / 11% 90% 10% 89% ;
+    background-color: aliceblue;
+    box-shadow: inset 10px 10px 20px rgb(140, 214, 249), 10px 10px 20px rgb(140, 214, 249);
+}
+
+.fern-flower__06 {
+    position: absolute;
+    top: 565px;
+    left: 630px;
+    width: 195px;
+    height: 195px;
+    border-radius:11% 89% 8% 92% / 11% 90% 10% 89% ;
+    background-color: aliceblue;
+    box-shadow: inset 10px 10px 20px rgb(140, 214, 249), 10px 10px 20px rgb(140, 214, 249);
+}
+
+.fern-flower__07 {
+    position: absolute;
+    top: 495px;
+    left: 335px;
+    width: 225px;
+    height: 105px;
+    border-radius: 52% 48% 47% 53% / 52% 50% 50% 48% ;
+    background-color: aliceblue;
+    box-shadow: inset 10px 10px 20px rgb(140, 214, 249), 10px 10px 20px rgb(140, 214, 249);
+}
+
+.fern-flower__08 {
+    position: absolute;
+    top: 495px;
+    left: 645px;
+    width: 225px;
+    height: 105px;
+    border-radius: 52% 48% 47% 53% / 52% 50% 50% 48% ;
+    background-color: aliceblue;
+    box-shadow: inset 10px 10px 20px rgb(140, 214, 249), 10px 10px 20px rgb(140, 214, 249);
+}
+
+
