@@ -1,0 +1,510 @@
+@import url('fonts.css');
+
+@import url('reset.css');
+
+body {
+    font-family: 'Causten', sans-serif;
+    color: #3C4242;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+[class*=__cntainer] {
+    max-width: 925px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* ================================== */
+
+.title {
+    font-family: 'Core Sans C', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.56px;
+    text-transform: capitalize;
+}
+
+.title--sub {
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: .4px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h4:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.button {
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    background: #8A33FD;
+    padding: 16px 20px;
+}
+
+.button:hover {
+    transition: .3s;
+    opacity: .3;
+}
+
+.button--small {
+    padding: 14px 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button--gray {
+    color: #807D7E;
+    font-size: 20px;
+    font-weight: 700;
+    background: #F6F6F6;
+    padding: 14px 40px;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #807D7E;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    opacity: 0;
+    transition: all .3s;
+}
+
+/* =================================== */
+
+.info {
+    padding: 50px 0;
+}
+
+.info__title:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.info__sub-title:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 42px;
+    row-gap: 30px;
+}
+
+.form__line {
+    flex: 0 1 426px;
+}
+
+.form__label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+}
+
+.form__label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.form__input {
+    width: 100%;
+    border-radius: 8px;
+    background: #F6F6F6;
+    padding: 0 22px;
+    height: 55px;
+}
+
+.form__input::placeholder{
+    color: #807D7E;
+}
+
+.line-form {
+    position: relative;
+}
+
+.line-form__btn {
+    position: absolute;
+    top: 53%;
+    left: 90%;
+}
+
+.line-form__btn img {
+    max-width: 100%;
+    width: 22px;
+    height: 22px;
+}
+
+.form__area {
+    flex: 0 1 895px;
+}
+
+.form__area textarea {
+    height: 149px;
+    min-width: 100%;
+    border-radius: 8px;
+    color: #807D7E;
+    background: #F6F6F6;
+    padding: 18px 22px;
+    resize: vertical;
+}
+
+.form__checkboxes {
+    display: flex;
+    flex: 0 1 100%;
+    row-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.form__checkboxes:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.form__checkbox {
+    flex: 0 1 500px;
+}
+
+.cneckbox {
+    position: relative;
+}
+
+.checkbox__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.checkbox__input:focus-visible + .checkbox__label {
+    outline: 1px solid #807D7E;
+    border-radius: 5px;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+    background-color: #807D7E;
+}
+
+.checkbox__label {
+    font-size: 20px;
+    display: inline-flex;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.checkbox__label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    border: 2px solid #bebcbd;
+    border-radius: 2px;
+}
+
+.form__buttons {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* ================================ */
+
+.check {
+    padding: 100px 0;
+}
+
+.check__box{
+    max-width: 870px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title--blue {
+    display: inline-flex;
+    column-gap: 15px;
+}
+
+.title--blue::before {
+    content: '';
+    border-radius: 10px;
+    background: #8A33FD;
+    width: 6px;
+    height: 28px;
+    display: inline-flex;
+    flex-basis: 6px;
+}
+
+.check__title:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.form__row {
+    display: flex;
+    column-gap: 38px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #EDEEF2;
+}
+
+.form__row .form__line{
+    flex: 0 1 382px;
+}
+
+.form__row .form__input {
+    width: 100%;
+    border-radius: 8px;
+    background: #F6F6F6;
+    padding: 0 20px;
+    height: 50px;
+}
+
+.form__row .form__line:nth-child(7),
+.form__row .form__line:nth-child(8),
+.form__row .form__line:nth-child(9) {
+    flex: 1 1 30%;
+}
+
+.form__btn-check {
+    flex: 1 1 100%;
+    padding-top: 20px;
+}
+
+.form__btn-check .button{
+    margin-bottom: 20px;
+}
+
+.form__title-text {
+    flex: 0 1 100%;
+}
+
+.form__title-text .form__titl:not(:last-child){
+    margin-bottom: 8px;
+}
+
+.form__radio-box {
+    flex: 1 1 100%;
+    flex-grow: 1;
+    border-radius: 12px;
+    background-color: #F6F6F6;
+    padding: 15px 50px 15px 30px;
+    position: relative;
+}
+
+.form__radio-box::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #EDEEF2;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+}
+
+.form__radio-box:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.form__radio {
+    padding: 25px 0;
+}
+
+.form__radio:not(:last-child){
+    border-bottom: 1px solid #BEBCBD;
+}
+
+.radio {
+    position: relative;
+}
+
+.radio__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.radio__input:focus-visible + .radio__label{
+    outline: 1px solid #3C4242;
+}
+
+.radio__input:checked + .radio__label::before{
+    background-color: #807D7E;
+    
+}
+
+.radio__label {
+    display: flex;
+    gap: 19px;
+}
+
+.label__text {
+    flex:0 1 224px 
+}
+
+.radio__label::before {
+    content: '';
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    flex: 0 0 18px;
+    border: 1px solid #3C4242;
+}
+
+.form__titl {
+    flex: 1 1 100%;
+    flex-grow: 1;
+}
+
+.form__method {
+    flex: 1 1 100%;
+    flex-grow: 1;
+    border-radius: 12px;
+    background-color: #F6F6F6;
+    padding: 15px 50px 15px 30px;
+    position: relative;
+}
+
+.form__method::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #EDEEF2;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+}
+
+.form__method:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.method__iner-text {
+    padding: 25px 0;
+}
+
+.method__iner-text:not(:last-child){
+    border-bottom: 1px solid #BEBCBD;
+}
+
+.text-iner{
+    display: flex;
+    justify-content: space-between;
+}
+/* ============================================= */
+
+.form__card {
+    flex: 1 1 100%;
+}
+
+.form__card .form__radio-box::after {
+    content: '';
+    background-color: transparent;
+    left: 0;
+    bottom: 0;
+}
+
+.form__card:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.box-card {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 30px 0 0 37px;
+}
+
+.box-card__list{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box-card__img {
+    flex: 0 0 80px;
+}
+
+.box-card__img img{
+    max-width: 100%;
+}
+
+.box-card__img:hover{
+    opacity: .3;
+    transition: all .3s;
+}
+
+.box-card__data{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.box-card__iner {
+    flex: 0 1 337px;
+}
+
+.box-card__input {
+    width: 100%;
+    border-radius: 8px;
+    background: #F6F6F6;
+    padding: 0 20px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #3C4242;
+}
+
+.iner-card {
+    position: relative;
+}
+
+.iner-card__img {
+    position: absolute;
+    top: 30%;
+    left: 87%;
+}
+
+.iner-card__img img {
+    max-width: 100%;
+    height: 20px;
+    width: 20px;
+}
+
+/* ============================================ */
+
+.footer {
+    font-style: 30px;
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    background-color:#EDEEF2;
+}
+
+/* ============================================ */
