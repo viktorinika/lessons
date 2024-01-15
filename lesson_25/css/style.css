@@ -1,0 +1,13 @@
+body {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.div {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+button {
+    display: inline-block;
+}
