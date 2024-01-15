@@ -1,0 +1,15 @@
+.div {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+div,
+a,
+p {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+button {
+    display: inline-block;
+}
