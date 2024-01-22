@@ -1,0 +1,47 @@
+@import url('reset.css');
+
+body {
+    background-color: transparent;
+    font-size: 25px;
+    text-align: justify;
+}
+.wrapper {
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.wrapper > main {
+    flex-grow: 1;
+}
+
+header {
+    padding: 30px;
+    background-color: rgb(255, 228, 196);
+    position: fixed;
+    z-index: 5;
+    width: 100%; 
+    display: flex;
+    justify-content: space-around;  
+}
+
+main {
+    padding: 100px 30px 30px;
+}
+
+footer {
+    padding: 30px;
+    background-color: rgb(255, 228, 196);
+    text-align: center;
+}
+
+p:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.span-interval {
+    display: block;
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(125, 139, 218);
+}
