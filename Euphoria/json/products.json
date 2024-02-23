@@ -1,0 +1,99 @@
+{
+    "products":[{
+        "id":1,
+        "url": "product.html",
+        "favorite": true,
+        "image": "img/limelight/image-01.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$77.00"
+    },{
+        "id":2,
+        "url": "product.html",
+        "favorite": true,
+        "image": "img/limelight/image-02.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$77.00"
+    },{
+        "id":3,
+        "url": "product.html",
+        "favorite": false,
+        "image": "img/limelight/image-03.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$77.00"
+    },{
+        "id":4,
+        "url": "product.html",
+        "favorite": true,
+        "image": "img/limelight/image-04.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$77.00"
+    },{
+        "id":5,
+        "url": "product.html",
+        "favorite": true,
+        "image": "img/limelight/image-01.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$77.00"
+    },{
+        "id":6,
+        "url": "product.html",
+        "favorite": false,
+        "image": "img/limelight/image-02.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$77.00"
+    },{
+        "id":7,
+        "url": "product.html",
+        "favorite": true,
+        "image": "img/limelight/image-03.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$67.00"
+    },{
+        "id":8,
+        "url": "product.html",
+        "favorite": true,
+        "image": "img/limelight/image-04.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$44.00"
+    },{
+        "id":9,
+        "url": "product.html",
+        "favorite": true,
+        "image": "img/limelight/image-01.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$77.00"
+    },{
+        "id":10,
+        "url": "product.html",
+        "favorite": true,
+        "image": "img/limelight/image-02.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$77.00"
+    },{
+        "id":11,
+        "url": "product.html",
+        "favorite": true,
+        "image": "img/limelight/image-03.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$32.00"
+    },{
+        "id":12,
+        "url": "product.html",
+        "favorite": false,
+        "image": "img/limelight/image-04.jpg",
+        "title":"Shirts Lorem ipsum dolor sit amet consectetur ",
+        "ladel":"Explore Now!",
+        "price":"$79.00"
+    }]
+}

@@ -1,0 +1,249 @@
+
+.filter {
+    border-right: 1px solid #BEBCBD;
+    @media (max-width: toEm(992)) {
+        border-left: 1px solid #BEBCBD;
+    }
+
+    &__title {
+    }
+
+    // .filter__buttom
+
+    &__button {
+    }
+
+    // .filter__body
+
+    &__body {
+    }
+
+    // .filter__section
+
+    &__section {
+    }
+}
+
+.section-filter {
+
+    &__body {
+        padding: toRem(35) toRem(30);
+        border-bottom: 1px solid #BEBCBD;
+    }
+    &__menu {
+    }
+    &__title {
+    }
+    &__price {
+    }
+    &__color {
+    }
+    &__size {
+    }
+    &__style {
+    }
+}
+.menu-filter {
+
+
+    &__list {
+        display: grid;
+        gap: toRem(18);
+        
+    }
+
+    // .menu-filter__link
+
+    &__link {
+        color: rgb(138, 137, 137);
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        gap: toRem(18);
+        line-height: 1.18;
+        transition: all 0.3s;
+        @media (any-hover:hover) {
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+.price-filter {
+
+    &__range {
+        &:not(:last-child) {
+            margin-bottom: toRem(32);
+        }
+    }
+
+    // .price-filter__inputs
+
+    &__inputs {
+        display: flex;
+        gap: toRem(30);
+    }
+
+    // .price-filter__input
+
+    &__input {
+        height: toRem(30);
+        border: toRem(1) solid #BEBCBD;
+        border-radius: toRem(8);
+        text-align: center;
+        color: $darkColor;
+        font-weight: 500;
+        &:focus {
+            outline-color: $darkColor;
+        }
+    }
+}
+
+.title-filter {
+    &.active {
+        .title-filter__button:not(.title-filter__button--main):before {
+            transform: rotate(-180dag);
+        }
+    }
+
+    &__button {
+        border-bottom: 1px solid #BEBCBD;
+        padding: toRem(20) toRem(30);
+        display: flex;
+        width: 100%;
+        gap: toRem(20);
+        flex-direction: row-reverse;
+        text-align: center;
+        justify-content: space-between;
+        font-size: toRem(22);
+        font-weight: 600;
+        transition: all 0.3s;
+        &::before {
+            font-size: toRem(10);
+            font-weight: 400;
+        }
+        &--main {
+            &::before {
+                font-size: toRem(16);
+            }
+        }
+        @media (any-hover:hover) {
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+
+.color-filter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: toRem(18);
+
+    &__item {
+        display: grid;
+        gap: toRem(18);
+        justify-items: center;
+        color: #8A8989;
+        align-items: center;
+    &::before{
+        content: '';
+        border-radius: toRem(12);
+        aspect-ratio: 1/1;
+        width: toRem(37);
+        background-color: var(--color);
+        }
+
+        &:has(input:focus-visible) {
+            outline: toRem(2) solid $mainColor;
+            border-radius: toRem(8);
+        }
+
+        &:has(input:checked) {
+            color: #000;
+            &::before{
+                transform: scale(0.95);
+            }
+        }
+    }
+    &__input {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+}
+
+.size-filter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: toRem(20);
+    text-align: center;
+
+    &__item {
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-size: toRem(14);
+        border: toRem(1) solid #BEBCBD;
+        padding: toRem(7) toRem(17);
+        border-radius: toRem(8);
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:has(input:focus-visible) {
+            outline: toRem(2) solid $darkColor;
+            border-radius: toRem(8);
+        }
+
+        &:has(input:checked) {
+            background-color: $darkColor;
+            color: #fff;
+            
+        }
+
+        @media (any-hover:hover) {
+            &:hover{
+                background-color: $darkColor;
+            color: #fff;
+            }
+        }
+    }
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+.style-filter {
+
+    &__item {
+        cursor: pointer;
+        @extend .menu-filter__link;
+        &:not(:last-child) {
+            margin-bottom: toRem(18);
+        }
+        &:has(input:focus-visible) {
+            outline: toRem(2) solid $darkColor;
+            border-radius: toRem(8);
+        }
+
+        &:has(input:checked) {
+            color: $purplColor;
+        }
+    }
+
+    // .style-filter__input
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}

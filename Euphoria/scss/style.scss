@@ -1,0 +1,118 @@
+@use "sass:math";
+
+$minWidth: 320;
+
+$maxWidth: 1440;
+
+$maxWidthContainer: 1240;
+
+$containerPadding: 30;
+
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+@import"_functions.scss";
+
+@import"_fonts.scss";
+
+@import"_icons.scss";
+
+@import"_reset.scss";
+
+@import"_vars.scss";
+
+@import"_nouislider.scss"; 
+
+// компоненти
+@import"_common.scss";
+
+@import"_filter.scss";
+
+@import"_header.scss";
+
+@import"_footer.scss";
+
+
+
+body {
+    font-family: 'Causten', sans-serif;
+    color: $mainColor;
+
+    &.menu-open {
+        overflow: hidden;
+        touch-action: none;
+        overscroll-behavior: none;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: clip;
+
+    @media (max-width: toEm(540)) {
+        padding-bottom: toRem(75);
+    }
+}
+
+.wrapper > main {
+    flex-grow: 1;
+}
+
+
+[class*= __container] {
+    max-width: toEm(1270);
+    padding-left: toEm(15);
+    padding-right: toEm(15);
+    margin: 0 auto;
+}
+
+// ----------main-------------------
+
+.page {
+
+    &__hero {
+        @include adaptiveValue ('margin-bottom', 130, 40);
+    }
+    &__deals {
+        @include adaptiveValue ('margin-bottom', 100, 40);
+    }
+    &__new {
+        @include adaptiveValue ('margin-bottom', 95, 40);
+    }
+    &__sale {
+        @include adaptiveValue ('margin-bottom', 100, 40);
+    }
+    &__shop-now {
+        @include adaptiveValue ('margin-bottom', 100, 40);
+    }
+    &__categories {
+        @include adaptiveValue ('margin-bottom', 100, 40);
+    }
+    &__top-brands {
+        @include adaptiveValue ('margin-bottom', 75, 40);
+    }
+    &__products {
+        @include adaptiveValue ('margin-bottom', 100, 40);
+    }
+    &__reviews {
+        @include adaptiveValue ('margin-bottom', 100, 40);
+    }
+    &__catalog {
+        @include adaptiveValue ('margin-bottom', 100, 40);
+    }
+    &__product {
+        @include adaptiveValue ('margin-bottom', 100, 40);
+    }
+    &__description {
+        @include adaptiveValue ('margin-bottom', 100, 40);
+    }
+}
+
+
+// сторінки
+
+@import"_home.scss";
+@import"_catalog.scss";
+@import"_product.scss";
